@@ -9,7 +9,7 @@ export default function Hero() {
         </h1>
 
         <p className="mx-auto mb-8 max-w-2xl text-xl text-zinc-300">
-          Building Leaders. Creating Freedom. Expanding Across Africa.
+          Building Leaders Across Africa and Beyond
         </p>
 
         <a
