@@ -1,3 +1,4 @@
+import Why from "./components/Why";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Products from "./components/Products";
@@ -7,6 +8,7 @@ export default function Home() {
     <main className="min-h-screen bg-zinc-900 text-white">
       <Navbar />
       <Hero />
+      <Why />
       <Products />
 
       <section
