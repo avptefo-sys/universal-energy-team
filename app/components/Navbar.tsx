@@ -1,25 +1,41 @@
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 z-50 w-full border-b border-zinc-800 bg-zinc-950/90 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <h1 className="text-xl font-bold text-orange-500">
-          Universal Energy Team
-        </h1>
-
-        <div className="hidden gap-6 md:flex">
-          <a href="#about" className="hover:text-orange-500">
-            About
-          </a>
-
-          <a href="#products" className="hover:text-orange-500">
-            Products
-          </a>
-
-          <a href="#contact" className="hover:text-orange-500">
-            Contact
-          </a>
+    <header className="fixed top-0 left-0 w-full bg-black p-6">
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          maxWidth: "1200px",
+          margin: "0 auto",
+        }}
+      >
+       <h1 style={{ color: "orange", fontSize: "32px" }}>UET</h1>
+        <div
+          style={{
+            display: "flex",
+            gap: "40px",
+            color: "white",
+          }}
+        >
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Products</a>
+          <a href="#">Contact</a>
         </div>
+
+        <button
+          style={{
+            background: "orange",
+            color: "white",
+            borderRadius: "30px",
+            padding: "12px 24px",
+            border: "none",
+          }}
+        >
+          Join
+        </button>
       </div>
-    </nav>
+    </header>
   );
 }
