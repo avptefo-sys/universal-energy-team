@@ -1,68 +1,97 @@
+import Image from "next/image";
+
 export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 z-50 w-full border-b border-zinc-800 bg-black/80 backdrop-blur-md">
-   <div
-  style={{
-    display: "grid",
-    gridTemplateColumns: "180px 1fr 180px",
-    alignItems: "center",
-    maxWidth: "1200px",
-    margin: "0 auto",
-    padding: "0 24px",
-    height: "80px",
-  }}
->  
 
-<h1 className="text-3xl font-extrabold tracking-wide text-orange-500">
-  UET
-</h1>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "320px 1fr 180px",
+          alignItems: "center",
+          maxWidth: "1400px",
+          margin: "0 auto",
+          padding: "0 30px",
+          height: "88px",
+        }}
+      >
+        {/* Logo */}
 
-       <nav
-  style={{
-    display: "flex",
-    gap: "40px",
-    alignItems: "center",
-  }}
-> 
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "16px",
+          }}
+        >
+          <Image
+            src="/images/logo.png"
+            alt="Universal Energy Team"
+            width={60}
+            height={60}
+            priority
+          />
 
-          <a
-            href="#"
-            className="text-white transition hover:text-orange-500"
-          >
-            Home
-          </a>
+          <div>
+            <div
+              style={{
+                color: "#ffffff",
+                fontWeight: "bold",
+                fontSize: "22px",
+              }}
+            >
+              Universal
+            </div>
 
-          <a
-            href="#about"
-            className="text-white transition hover:text-orange-500"
-          >
-            About
-          </a>
+            <div
+              style={{
+                color: "#4ea5ff",
+                fontSize: "15px",
+              }}
+            >
+              Energy Team
+            </div>
+          </div>
+        </div>
 
-          <a
-            href="#products"
-            className="text-white transition hover:text-orange-500"
-          >
-            Products
-          </a>
+        {/* Menu */}
 
-          <a
-            href="#contact"
-            className="text-white transition hover:text-orange-500"
-          >
-            Contact
-          </a>
-
+        <nav
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "45px",
+          }}
+        >
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#contact">Contact</a>
         </nav>
 
-        <a
-          href="https://wa.me/2348137802166"
-          target="_blank"
-          className="rounded-full bg-orange-500 px-6 py-3 font-bold text-white transition duration-300 hover:scale-105 hover:bg-orange-600"
-        >
-          Join Now
-        </a>
+        {/* Join */}
 
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "flex-end",
+          }}
+        >
+          <a
+            href="https://wa.me/2348137802166"
+            target="_blank"
+            style={{
+              background: "#ff7a00",
+              color: "white",
+              padding: "14px 28px",
+              borderRadius: "999px",
+              textDecoration: "none",
+              fontWeight: "bold",
+            }}
+          >
+            Join Now
+          </a>
+        </div>
       </div>
     </header>
   );
